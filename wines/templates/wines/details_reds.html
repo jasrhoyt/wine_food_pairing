@@ -1,0 +1,35 @@
+{% for red_wines in wine %}
+<h1>{{ red_wines.wine_name }}</h1>
+<ul>
+    <li>{{ red_wines.vineyard }}</li>
+    <li>{{ red_wines.region }}</li>
+    <li>{{ red_wines.style }}</li>
+    <li>{{ red_wines.year }}</li>
+    <li>Flavor Profile:</li><br>
+        <table>
+            <tr>
+                <td><span>Light</span></td>
+                <td><input type="range" disabled min="1" max="10" value='{{ red_wines.light_bold }}'></td>
+                <td><span>Bold</span></td>
+            </tr>
+            <tr>
+                <td><span>Sweet</span></td>
+                <td><input type="range" disabled min="1" max="10" value='{{ red_wines.sweet_dry }}'></td>
+                <td><span>Dry</span></li></td>
+            </tr>
+            <tr>
+                <td><span>Smooth</span></td>
+                <td><input type="range" disabled min="1" max="10" value='{{ red_wines.smooth_tannic }}'></td>
+                <td><span>Tannic</span></td>
+            </tr>
+            <tr>
+                <td><span>Soft</span></td>
+                <td><input type="range" disabled min="1" max="10" value='{{ red_wines.soft_acidic }}'></td>
+                <td><span>Acidic</span></td>
+            </tr>
+
+        </table>
+    
+    
+</ul>
+{% endfor %}

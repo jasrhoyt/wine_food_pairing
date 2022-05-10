@@ -1,0 +1,14 @@
+{% if wine_list %}
+<h1>Which style of wine would you like to browse?</h1>
+    <ul>
+        <li>
+            <a href="/wines/reds/">Red Wines</a>
+        </li>
+        <li>
+            <a href="/wines/whites/">White Wines</a>
+        </li>
+    
+    </ul>
+{% else %}
+    <p>No wines are available.</p>
+{% endif %}

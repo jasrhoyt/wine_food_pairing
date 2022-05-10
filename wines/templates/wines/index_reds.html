@@ -1,0 +1,9 @@
+{% if red_wine_list %}
+    <ul>
+    {% for red_wines in red_wine_list %}
+        <li><a href="/wines/reds/{{ red_wines.id }}/">{{ red_wines.wine_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No wines are available.</p>
+{% endif %}
