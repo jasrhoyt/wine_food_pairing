@@ -27,10 +27,18 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TAILWIND_APP_NAME = 'theme'
 
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+NPM_BIN_PATH = "npm.cmd"
 # Application definition
 
 INSTALLED_APPS = [
+    'tailwind',
+    'theme',
     'wines.apps.WinesConfig',
     'django.contrib.admin',
     'django.contrib.auth',
